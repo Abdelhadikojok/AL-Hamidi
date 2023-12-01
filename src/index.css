@@ -968,6 +968,7 @@ form .submit {
 @media (max-width: 850px) {
   .firstImage {
     width: 420px;
+    right: 20px;
   }
   .secondImage {
     width: 272px;
@@ -1003,7 +1004,13 @@ form .submit {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 500px) {
+  .firstImage {
+    width: 300px;
+  }
+}
+
+@media (max-width: 410px) {
   .about-us-text-container {
     width: 100%;
   }
@@ -1026,6 +1033,27 @@ form .submit {
 
   .firstImage .since-date .badge2 {
     top: -12px;
+  }
+}
+
+@media (max-width: 371px) {
+  .firstImage {
+    right: 30px;
+  }
+  .secondImage {
+    left: -90px;
+    bottom: -95px;
+  }
+}
+
+@media (max-width: 330px) {
+  .firstImage {
+    right: 10px;
+    width: 200px;
+  }
+  .secondImage {
+    width: 200px;
+    left: -70px;
   }
 }
 
