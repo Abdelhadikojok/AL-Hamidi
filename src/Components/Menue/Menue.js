@@ -23,7 +23,6 @@ function HomeMenue() {
 
         const CategoriesResult = await Categoriesresponse.json();
         setCategoriesData(CategoriesResult);
-        console.log(categories);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -35,7 +34,6 @@ function HomeMenue() {
   }, []);
 
   useEffect(() => {
-    console.log("bla samir a5ad e5ti");
     getItems("65569d8cf4a8d4687d535d8d");
   }, []);
 
@@ -51,8 +49,6 @@ function HomeMenue() {
 
       const Itemsresult = await Itemsresponse.json();
       setItemsData(Itemsresult);
-
-      console.log(items);
     } catch (error) {
       console.error("Error fetching items:", error);
     }

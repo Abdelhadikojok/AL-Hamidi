@@ -48,8 +48,6 @@ export default function Location() {
         <iframe
           title="Google Map"
           src="https://maps.google.com/maps?q=Al-Hamidi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
-          scrolling="no"
           style={{ width: "100%", height: "400px" }}
         ></iframe>
       </div>
