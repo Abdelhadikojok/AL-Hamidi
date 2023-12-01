@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AL-Hamidi/static/css/main.7855cf0a.css",
-    "main.js": "/AL-Hamidi/static/js/main.3c1cc759.js",
+    "main.js": "/AL-Hamidi/static/js/main.ad1de2d1.js",
     "static/js/787.fa9cb370.chunk.js": "/AL-Hamidi/static/js/787.fa9cb370.chunk.js",
     "static/media/IMG_1532.JPG": "/AL-Hamidi/static/media/IMG_1532.a933c6453071d41813ca.JPG",
     "static/media/IMG_1523.JPG": "/AL-Hamidi/static/media/IMG_1523.4d6bf0eb66aa1641dba2.JPG",
@@ -19,11 +19,11 @@
     "static/media/clock-icon.svg": "/AL-Hamidi/static/media/clock-icon.d1063aaad0f59d062c44487f8bccc856.svg",
     "static/media/x-icon.svg": "/AL-Hamidi/static/media/x-icon.f0e990dee81a779bfcc2b5c12ba07b11.svg",
     "main.7855cf0a.css.map": "/AL-Hamidi/static/css/main.7855cf0a.css.map",
-    "main.3c1cc759.js.map": "/AL-Hamidi/static/js/main.3c1cc759.js.map",
+    "main.ad1de2d1.js.map": "/AL-Hamidi/static/js/main.ad1de2d1.js.map",
     "787.fa9cb370.chunk.js.map": "/AL-Hamidi/static/js/787.fa9cb370.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7855cf0a.css",
-    "static/js/main.3c1cc759.js"
+    "static/js/main.ad1de2d1.js"
   ]
 }
