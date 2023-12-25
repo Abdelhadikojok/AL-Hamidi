@@ -39,6 +39,7 @@ function HomeMenue() {
 
   async function getItems(id) {
     try {
+      setLoading(true);
       const Itemsresponse = await fetch(
         `${apiUrl}/itemsCategory?categoryId=${id}`
       );
@@ -49,6 +50,7 @@ function HomeMenue() {
 
       const Itemsresult = await Itemsresponse.json();
       setItemsData(Itemsresult);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching items:", error);
     }

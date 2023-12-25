@@ -25,7 +25,7 @@ export default function Location() {
               <img src={loactionLogo} style={{ width: "25px" }} />
               <p>Location</p>
             </div>
-            <span>Tripoli - monla street-face to chater hassan</span>
+            <span>Tripoli - monla street - face to chater hassan</span>
           </div>
           <div className="location-description-topics phone-number">
             <div className="location-description-topics-header">
