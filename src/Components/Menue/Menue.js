@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 
 import separator from "../../assets/separator.svg";
 import shape5 from "../../assets/shape-5.png";
@@ -12,17 +12,48 @@ function HomeMenue() {
   const [categories, setCategoriesData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const getItems = useCallback(
+    async (id) => {
+      try {
+        setLoading(true);
+        const Itemsresponse = await fetch(
+          `${apiUrl}/itemsCategory?categoryId=${id}`
+        );
+
+        if (!Itemsresponse.ok) {
+          throw new Error("Network Itemsresponse was not ok");
+        }
+
+        const Itemsresult = await Itemsresponse.json();
+        setItemsData(Itemsresult);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching items:", error);
+      }
+    },
+    [apiUrl]
+  );
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const Categoriesresponse = await fetch(`${apiUrl}/categories`);
+        setLoading(true);
+        const [Categoriesresponse, Itemsresponse] = await Promise.all([
+          fetch(`${apiUrl}/categories`),
+          fetch(`${apiUrl}/itemsCategory?categoryId=65569d8cf4a8d4687d535d8d`),
+        ]);
 
-        if (!Categoriesresponse.ok) {
-          throw new Error("Network Categoriesresponse was not ok");
+        if (!Categoriesresponse.ok || !Itemsresponse.ok) {
+          throw new Error("Network response was not ok");
         }
 
-        const CategoriesResult = await Categoriesresponse.json();
+        const [CategoriesResult, Itemsresult] = await Promise.all([
+          Categoriesresponse.json(),
+          Itemsresponse.json(),
+        ]);
+
         setCategoriesData(CategoriesResult);
+        setItemsData(Itemsresult);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -31,66 +62,51 @@ function HomeMenue() {
     };
 
     fetchData();
-  }, []);
+  }, [apiUrl, getItems]);
 
-  useEffect(() => {
-    getItems("65569d8cf4a8d4687d535d8d");
-  }, []);
+  const Categories = useMemo(
+    () =>
+      categories.map((elem) => (
+        <button
+          key={elem._id}
+          className="category-card"
+          onClick={() => {
+            getItems(elem._id);
+          }}
+        >
+          <img
+            src={`${apiUrl}/api/${elem.categoreyImage}`}
+            alt={elem.name}
+            width="30px"
+          />
+          <p className="category-name">{elem.name}</p>
+        </button>
+      )),
+    [categories, apiUrl, getItems]
+  );
 
-  async function getItems(id) {
-    try {
-      setLoading(true);
-      const Itemsresponse = await fetch(
-        `${apiUrl}/itemsCategory?categoryId=${id}`
-      );
-
-      if (!Itemsresponse.ok) {
-        throw new Error("Network Itemsresponse was not ok");
-      }
-
-      const Itemsresult = await Itemsresponse.json();
-      setItemsData(Itemsresult);
-      setLoading(false);
-    } catch (error) {
-      console.error("Error fetching items:", error);
-    }
-  }
-
-  const Categories = categories.map((elem) => (
-    <button
-      key={elem._id}
-      className="category-card"
-      onClick={() => {
-        getItems(elem._id);
-      }}
-    >
-      <img
-        src={`${apiUrl}/api/${elem.categoreyImage}`}
-        alt={elem.name}
-        width="30px"
-      />
-      <p className="category-name">{elem.name}</p>
-    </button>
-  ));
-
-  const Items = items.map((elem) => (
-    <div className="item-card" key={elem._id}>
-      <div className="item-image">
-        <img src={`${apiUrl}/api/${elem.productImage}`} alt={elem.name} />
-        <div className="img-overlay"></div>
-      </div>
-      <div className="item-content">
-        <div className="title-wrapper">
-          <p className="name">{elem.name}</p>
-          <p className="line-separator"></p>
-          <p className="price">{elem.price}ل.ل</p>
+  const Items = useMemo(
+    () =>
+      items.map((elem) => (
+        <div className="item-card" key={elem._id}>
+          <div className="item-image">
+            <img src={`${apiUrl}/api/${elem.productImage}`} alt={elem.name} />
+            <div className="img-overlay"></div>
+          </div>
+          <div className="item-content">
+            <div className="title-wrapper">
+              <p className="name">{elem.name}</p>
+              <p className="line-separator"></p>
+              <p className="price">{elem.price}ل.ل</p>
+            </div>
+            <div className="discreption">
+              {elem.type} , {elem.description}
+            </div>
+          </div>
         </div>
-        <div className="discreption">
-          {elem.type} , {elem.description}
-        </div>
-      </div>
-    </div>
-  ));
+      )),
+    [items, apiUrl]
+  );
 
   const loader = (
     <div style={{ margin: "40px auto", width: "fit-content" }}>
