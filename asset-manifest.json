@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/AL-Hamidi/static/css/main.18fa854f.css",
-    "main.js": "/AL-Hamidi/static/js/main.a8d36e3c.js",
+    "main.js": "/AL-Hamidi/static/js/main.3bc70cb1.js",
     "static/js/787.fa9cb370.chunk.js": "/AL-Hamidi/static/js/787.fa9cb370.chunk.js",
-    "static/media/IMG_1532.JPG": "/AL-Hamidi/static/media/IMG_1532.a933c6453071d41813ca.JPG",
-    "static/media/IMG_1523.JPG": "/AL-Hamidi/static/media/IMG_1523.4d6bf0eb66aa1641dba2.JPG",
-    "static/media/IMG_1515.JPG": "/AL-Hamidi/static/media/IMG_1515.cfd6c02103ac0cb74653.JPG",
     "static/media/img-pattern.svg": "/AL-Hamidi/static/media/img-pattern.148d9c075c75a3e657f763f872f03b63.svg",
+    "static/media/IMG_1523.JPG": "/AL-Hamidi/static/media/IMG_1523.d21be2315423c57317ad.JPG",
+    "static/media/IMG_1532.JPG": "/AL-Hamidi/static/media/IMG_1532.c2ac0b39140b2f79402a.JPG",
+    "static/media/IMG_1515.JPG": "/AL-Hamidi/static/media/IMG_1515.9f87146fa034bbfbef4f.JPG",
     "static/media/shape-5.png": "/AL-Hamidi/static/media/shape-5.bd2617fcd17e98d4fb1a.png",
     "static/media/Asset 1.png": "/AL-Hamidi/static/media/Asset 1.64fc027a2407b27aeeaf.png",
     "static/media/shape-6.png": "/AL-Hamidi/static/media/shape-6.d9f18f13ec963b9bbdf4.png",
@@ -19,11 +19,11 @@
     "static/media/clock-icon.svg": "/AL-Hamidi/static/media/clock-icon.d1063aaad0f59d062c44487f8bccc856.svg",
     "static/media/x-icon.svg": "/AL-Hamidi/static/media/x-icon.f0e990dee81a779bfcc2b5c12ba07b11.svg",
     "main.18fa854f.css.map": "/AL-Hamidi/static/css/main.18fa854f.css.map",
-    "main.a8d36e3c.js.map": "/AL-Hamidi/static/js/main.a8d36e3c.js.map",
+    "main.3bc70cb1.js.map": "/AL-Hamidi/static/js/main.3bc70cb1.js.map",
     "787.fa9cb370.chunk.js.map": "/AL-Hamidi/static/js/787.fa9cb370.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18fa854f.css",
-    "static/js/main.a8d36e3c.js"
+    "static/js/main.3bc70cb1.js"
   ]
 }
