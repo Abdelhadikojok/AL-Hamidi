@@ -5,92 +5,58 @@ import shape5 from "../../assets/shape-5.png";
 import shape6 from "../../assets/shape-6.png";
 import Loader from "../Preloader/loader";
 
-function HomeMenue() {
-  const apiUrl = process.env.REACT_APP_API_URL;
+import menuData from '../../data.json';
 
+function HomeMenue() {
   const [items, setItemsData] = useState([]);
   const [categories, setCategoriesData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getItems = useCallback(
-    async (id) => {
-      try {
-        setLoading(true);
-        const Itemsresponse = await fetch(
-          `${apiUrl}/itemsCategory?categoryId=${id}`
-        );
-
-        if (!Itemsresponse.ok) {
-          throw new Error("Network Itemsresponse was not ok");
-        }
-
-        const Itemsresult = await Itemsresponse.json();
-        setItemsData(Itemsresult);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching items:", error);
-      }
-    },
-    [apiUrl]
-  );
-
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const [Categoriesresponse, Itemsresponse] = await Promise.all([
-          fetch(`${apiUrl}/categories`),
-          fetch(`${apiUrl}/itemsCategory?categoryId=65569d8cf4a8d4687d535d8d`),
-        ]);
+    // Set initial categories and items from local data
+    setCategoriesData(menuData);
+    setItemsData(menuData[0]?.items || []);
+    setLoading(false);
+  }, []);
 
-        if (!Categoriesresponse.ok || !Itemsresponse.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        const [CategoriesResult, Itemsresult] = await Promise.all([
-          Categoriesresponse.json(),
-          Itemsresponse.json(),
-        ]);
-
-        setCategoriesData(CategoriesResult);
-        setItemsData(Itemsresult);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [apiUrl, getItems]);
+  const getItems = useCallback((categoryName) => {
+    setLoading(true);
+    // Filter by category name instead of ID
+    const category = menuData.find(cat => cat.name === categoryName) || menuData[0];
+    setItemsData(category.items);
+    setLoading(false);
+  }, []);
 
   const Categories = useMemo(
     () =>
       categories.map((elem) => (
         <button
-          key={elem._id}
+          key={elem.name} // Use name as key since we don't have _id
           className="category-card"
           onClick={() => {
-            getItems(elem._id);
+            getItems(elem.name);
           }}
         >
           <img
-            src={`${apiUrl}/api/${elem.categoreyImage}`}
+            src={require(`../../assets/images/items/${elem.categoreyImage}`)}
             alt={elem.name}
             width="30px"
           />
           <p className="category-name">{elem.name}</p>
         </button>
       )),
-    [categories, apiUrl, getItems]
+    [categories, getItems]
   );
 
   const Items = useMemo(
     () =>
       items.map((elem) => (
-        <div className="item-card" key={elem._id}>
+        <div className="item-card" key={elem.name}> {/* Use name as key since we don't have _id */}
           <div className="item-image">
-            <img src={`${apiUrl}/api/${elem.productImage}`} alt={elem.name} />
+            <img 
+              src={elem.productImage ? require(`../../assets/images/items/${elem.productImage}`) : ''} 
+              alt={elem.name} 
+            />
             <div className="img-overlay"></div>
           </div>
           <div className="item-content">
@@ -105,7 +71,7 @@ function HomeMenue() {
           </div>
         </div>
       )),
-    [items, apiUrl]
+    [items]
   );
 
   const loader = (
