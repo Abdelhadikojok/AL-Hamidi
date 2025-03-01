@@ -18,14 +18,14 @@ export default function Location() {
               <img src={clockIcon} alt="clock-icon" style={{ width: "25px" }} />
               <p>Opening Time</p>
             </div>
-            <span>6.00 am to 4.00 pm</span>
+            <span>8.00 am to 5.00 pm</span>
           </div>
           <div className="location-description-topics location-text">
             <div className="location-description-topics-header">
               <img src={loactionLogo} style={{ width: "25px" }} />
               <p>Location</p>
             </div>
-            <span>Tripoli - monla street - face to chater hassan</span>
+            <span>Tripoli - mina street - nearby by howa-chicken</span>
           </div>
           <div className="location-description-topics phone-number">
             <div className="location-description-topics-header">

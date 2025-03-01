@@ -109,7 +109,7 @@ function Header() {
                 to chater hassan
               </div>
 
-              <p className="body-4 navbar-text">Open: 6.00 am to 4.00 pm</p>
+              <p className="body-4 navbar-text">Open: 8.00 am to 5.00 pm</p>
 
               <div className="separator"></div>
 

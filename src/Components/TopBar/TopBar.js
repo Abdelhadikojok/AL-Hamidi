@@ -40,7 +40,7 @@ function TopBar() {
           <div className="separator"></div>
           <div className={styles["open-time"]}>
             <span className={styles["topbar-item"]}>
-              Daily : 6.00 am to 4.00 pm
+              Daily : 8.00 am to 5.00 pm
             </span>
           </div>
         </div>
