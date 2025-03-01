@@ -630,6 +630,7 @@ form .submit {
   border: 3px solid #d89a40;
   cursor: pointer;
   transition: 0.3s;
+  height: 115px;
 }
 
 @media (max-width: 600px) {
@@ -662,9 +663,10 @@ form .submit {
 
 .categories-slider .category-card .category-name {
   color: #d89a40;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: bold;
   transition: 0.3s;
+  line-height: normal;
 }
 
 .home-menue {

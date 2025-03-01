@@ -1,52 +1,52 @@
 [
     {
-      "name": "سواريه",
+      "name": "سواريه بعجينة رقاقات",
       "categoreyImage": "categoreyImage-1700175244890-942289665.png",
       "items": [
         {
           "name": "بيتزا",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "صغير",
           "description": "صوص البيتزا , فليفلة , دره , فطر , زيتون , مودزاريلا",
-          "productImage": "productImage-1701566660595-140365991.jpg"
+          "productImage": "pizza.jpg"
         },
         {
           "name": "سمبوسك لحمة",
-          "type": "قطعة",
-          "price": 30,
+          "type": "قطعة", 
+          "price": "30,000",
           "size": "صغير",
           "description": "عجين مقلي , لحمة , بصل , دبس رمان",
-          "productImage": "productImage-1701566790341-843728098.jpg"
+          "productImage": "sabosek-lahmi.jpg"
         },
         {
           "name": "لحمة بعجين كبير",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "كبير",
           "description": "عجين رقاقات , لحمة , بصل , دبس رمان , طحينة",
-          "productImage": "productImage-1701566884787-486722173.jpg"
+          "productImage": "sfiha-lahmi-large.jpg"
         },
         {
           "name": "كبه بلحمة مقلية",
           "type": "قطعة",
-          "price": 40,
+          "price": "40,000",
           "size": "وسط",
           "description": "لحمة , بصل, دبس رمان ,مكسرات",
-          "productImage": "productImage-1701566634675-701706603.jpg"
+          "productImage": "kebeh.jpg"
         },
         {
           "name": "أريشة مع جبنة",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "صغير",
           "description": "بندورة , فليفلة , بصل , اريشة , مودزاريلا",
-          "productImage": "productImage-1701566681157-891692216.jpg"
+          "productImage": "arishi+jbnih.jpg"
         },
         {
           "name": "رقاقات جبنة مثلث",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "صغير",
           "description": "عجين رقاقات , جبنة تشكي و مودزاريل",
           "productImage": "productImage-1701566734148-665522865.jpg"
@@ -54,15 +54,15 @@
         {
           "name": "رقاقات جبنة مربعة",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "صغير",
           "description": "عجين رقاقات , جبنة تشكي و مودزاريل",
-          "productImage": ""
+          "productImage": "jbnih-square.jpg"
         },
         {
           "name": "فاهيتا",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "صغير",
           "description": "عجين رقاقات , دره , فطر , فليفلة , بصل , دجاج , صوص فاهيتا ",
           "productImage": "productImage-1701566777115-502115158.jpg"
@@ -70,34 +70,80 @@
         {
           "name": "زعتر",
           "type": "قطعة",
-          "price": 25,
+          "price": "25,000",
           "size": "صغير",
           "description": "عجين رقاقات , زعتر",
-          "productImage": "productImage-1701566858684-590764525.jpg"
+          "productImage": "saatar.jpg"
         },
         {
           "name": "لحمة بعجين صغير",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "صغير",
           "description": "عجين رقاقات , لحمة , بصل , دبس رمان , طحينة",
-          "productImage": "productImage-1701567048225-872391368.jpg"
+          "productImage": "sfiha-lahmi-small.jpg"
         },
         {
           "name": "شعيبيات سلق",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "وسط",
           "description": "سلق , دبس رمان , سماق , بصل , جوز",
-          "productImage": "productImage-1701566823956-435666474.jpg"
+          "productImage": "shaaybeyat-3jin.jpg"
         },
         {
           "name": "تركية مع جبنة",
           "type": "قطعة",
-          "price": 50,
+          "price": "50,000",
           "size": "وسط",
-          "description": "سلق , دبس رمان , سماق , بصل , جوز",
-          "productImage": ""
+          "description": "بندوره, فليفلة,  بصل, حر, موزريلا",
+          "productImage": "trkyi+jbnih.jpg"
+        }
+      ]
+    },
+    {
+      "name": "سواريه بعجينة مناقيش",
+      "categoreyImage": "categoreyImage-1700175244890-942289665.png",
+      "items": [
+        {
+          "name": "بيتزا",
+          "type": "قطعة",
+          "price": "50,000",
+          "size": "صغير",
+          "description": "صوص البيتزا , فليفلة , دره , فطر , زيتون , مودزاريلا",
+          "productImage": "pizza-3jin.jpg"
+        },
+        {
+          "name": "أريشة ",
+          "type": "قطعة",
+          "price": "50,000",
+          "size": "صغير",
+          "description": "بندورة , فليفلة , بصل , اريشة",
+          "productImage": "arishi-3ajin.jpg"
+        },
+        {
+          "name": "jebnih",
+          "type": "قطعة",
+          "price": "50,000",
+          "size": "صغير",
+          "description": "جبنة تشكي و مودزاريل",
+          "productImage": "jbnih-3jin.jpg"
+        },
+        {
+          "name": "زعتر",
+          "type": "قطعة",
+          "price": "25,000",
+          "size": "صغير",
+          "description": "عجين, زعتر",
+          "productImage": "saatar-3jin.jpg"
+        },
+        {
+          "name": "تركية",
+          "type": "قطعة",
+          "price": "50,000",
+          "size": "وسط",
+          "description": "بندوره, فليفلة,  بصل, حر, موزريلا",
+          "productImage": "trkyi+jbnih-ajin.jpg"
         }
       ]
     },
@@ -108,88 +154,26 @@
         {
           "name": "كرواسان جبنة",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "وسط",
           "description": "عجين كروسان , جبنة",
-          "productImage": "productImage-1701566805506-986558637.jpg"
+          "productImage": "qurwason-jbnih.jpg"
         },
         {
           "name": "كرواسان شوكولا",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "وسط",
           "description": "عجين كرواسان  , شوكولا",
-          "productImage": "productImage-1701567117000-942135849.jpg"
+          "productImage": "qurwason-chocolate.jpg"
         },
         {
           "name": "كرواسان زعتر",
           "type": "قطعة",
-          "price": 70,
+          "price": "70,000",
           "size": "وسط",
           "description": "عجين كروسان , زعتر",
           "productImage": "productImage-1701566764194-68149849.jpg"
-        }
-      ]
-    },
-    {
-      "name": "عجين مثلج",
-      "categoreyImage": "categoreyImage-1700175343910-876272244.png",
-      "items": [
-        {
-          "name": "عجينة اللحم بعجين عادي",
-          "type": "دزينة",
-          "price": 280,
-          "size": "صغير",
-          "description": "عدد القطع 12",
-          "productImage": "productImage-1701429146592-359125515.jpeg"
-        },
-        {
-          "name": "عجينة اللحم بعجين اكسترا",
-          "type": "دزينة",
-          "price": 350,
-          "size": "صغير",
-          "description": "عدد القطع 12",
-          "productImage": "productImage-1701429146592-359125515.jpeg"
-        },
-        {
-          "name": "عجينة رقاقات ميلفاي ",
-          "type": "قطعة",
-          "price": 170,
-          "size": "وسط",
-          "description": "عدد القطع 16",
-          "productImage": "productImage-1701429599723-585195911.jpeg"
-        },
-        {
-          "name": "عجينة شيشبرك ",
-          "type": "قطعة",
-          "price": 120,
-          "size": "وسط",
-          "description": "عدد القطع 48",
-          "productImage": "productImage-1701429777284-816358938.jpeg"
-        },
-        {
-          "name": "عجينة بيتزا سواريه",
-          "type": "قطعة",
-          "price": 150,
-          "size": "وسط",
-          "description": "عدد القطع 12",
-          "productImage": "productImage-1701429828137-357790246.jpeg"
-        },
-        {
-          "name": "عجينة السمبوسك",
-          "type": "قطعة",
-          "price": 120,
-          "size": "وسط",
-          "description": "عدد القطع 12",
-          "productImage": "categoreyImage-1700175343910-876272244.png"
-        },
-        {
-          "name": "عجينة رقاقات مربعة",
-          "type": "قطعة",
-          "price": 240,
-          "size": "وسط",
-          "description": "عدد القطع 12",
-          "productImage": "productImage-1701429828137-357790246.jpeg"
         }
       ]
     },
@@ -200,58 +184,58 @@
         {
           "name": "كعكة جبنة",
           "type": "قطعة",
-          "price": 150,
+          "price": "150,000",
           "size": "صغير",
           "description": "جبنة مودزاريل ",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         },
         {
           "name": "كعكة اكسترا جبنة ",
           "type": "قطعة",
-          "price": 200,
+          "price": "200,000",
           "size": "وسط",
           "description": "جبنة مودزاريل , جبنة تشيكي",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         },
         {
           "name": "كعكة بجبنة مع ذره",
           "type": "قطعة",
-          "price": 200,
+          "price": "200,000",
           "size": "وسط",
           "description": "جبنة مودزاريل , جبنة تشيكي , ذره",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         },
         {
           "name": "كعكة جبنة بخضرا",
           "type": "قطعة",
-          "price": 200,
+          "price": "200,000",
           "size": "وسط",
           "description": "حبنة مودزاريل , جبنة تشيكي , خضرا",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         },
         {
           "name": "كعكة بجبنة ببيروني",
           "type": "قطعة",
-          "price": 230,
+          "price": "230,000",
           "size": "صغير",
           "description": "جبنة مودزاريل , جبنة تشيكي , ببيروني",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         },
         {
           "name": "كعكة بجبنة حبش",
           "type": "قطعة",
-          "price": 230,
+          "price": "230,000",
           "size": "صغير",
           "description": "جبنة مودزاريل , جبنة تشيكي , حبش",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         },
         {
           "name": "sitos كعكة بجبنة",
           "type": "قطعة",
-          "price": 230,
+          "price": "230,000",
           "size": "صغير",
           "description": "sitos , جبنة مودزاريل , جبنة تشيكي",
-          "productImage": "productImage-1701430162083-963430855.jpg"
+          "productImage": "kaaki+jbnih.jpg"
         }
       ]
     },
@@ -262,50 +246,50 @@
         {
           "name": "Tarte Pineapple",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "",
-          "description": "",
-          "productImage": "tart.png"
+          "description": "اناناس, كريم بتسيار",
+          "productImage": "pineapple-tart.jpg"
         },
         {
           "name": "Tarte Nutella",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "",
-          "description": "",
-          "productImage": "tart.png"
+          "description": "شوكلا نوتيلا, شوكلا بيضاء",
+          "productImage": "nutella.jpg"
         },
         {
           "name": "Tarte Lotus",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "",
-          "description": "",
-          "productImage": "tart.png"
+          "description": "شوكلا لوتس, شوكلا بيضاء, فريز",
+          "productImage": "lutos.jpg"
         },
         {
           "name": "Tarte بجبنة و حبش",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "",
-          "description": "",
-          "productImage": "tart.png"
+          "description": "جبنة تشيكي, عكاوي, مودزريلا, حبش",
+          "productImage": "martdela.jpg"
         },
         {
           "name": "Tarte بجبنة و سجق",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "",
-          "description": "",
-          "productImage": "tart.png"
+          "description": "جبنة تشيكي, عكاوي, مودزريلا, سجق",
+          "productImage": "sejok+jbnih.jpg"
         },
         {
           "name": "Tarte بجبنة و ببيروني",
           "type": "قطعة",
-          "price": 100,
+          "price": "100,000",
           "size": "",
-          "description": "",
-          "productImage": "tart.png"
+          "description": "جبنة تشيكي, عكاوي, مودزريلا, ببيروني",
+          "productImage": "peperoni+jbnih.jpg"
         }
       ]
     },
@@ -316,7 +300,7 @@
         {
           "name": "سواريه بيتزا",
           "type": "دزينة",
-          "price": 420,
+          "price": "420,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -324,7 +308,7 @@
         {
           "name": "سواريه فاهيتا",
           "type": "دزينة",
-          "price": 420,
+          "price": "420,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -332,7 +316,7 @@
         {
           "name": " سواريه زعتر",
           "type": "دزينة",
-          "price": 240,
+          "price": "240,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -340,7 +324,7 @@
         {
           "name": " سواريه اريشة",
           "type": "دزينة",
-          "price": 420,
+          "price": "420,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -348,7 +332,7 @@
         {
           "name": " سواريه تركية",
           "type": "دزينة",
-          "price": 420,
+          "price": "420,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -356,7 +340,7 @@
         {
           "name": " سواريه جبنة",
           "type": "دزينة",
-          "price": 420,
+          "price": "420,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -364,7 +348,7 @@
         {
           "name": "كبة بلحمة",
           "type": "دزينة",
-          "price": 480,
+          "price": "480,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -372,7 +356,7 @@
         {
           "name": "سمبوسك بلحمة",
           "type": "دزينة",
-          "price": 360,
+          "price": "360,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
@@ -380,7 +364,7 @@
         {
           "name": " سواريه شعيبيات سلق",
           "type": "دزينة",
-          "price": 420,
+          "price": "420,000",
           "size": "دزينة",
           "description": "عدد القطع 12",
           "productImage": ""
